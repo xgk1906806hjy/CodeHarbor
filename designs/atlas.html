@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeHarbor · Atlas Desk</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="atlas.css" />
+</head>
+<body>
+  <header class="app-header">
+    <a class="brand" href="../index.html"><span class="brand-mark">CH</span><span><strong>CodeHarbor</strong><small>ATLAS DEVELOPER NETWORK</small></span></a>
+    <nav class="head-nav"><a class="active" href="#">发现</a><a href="#articles">博客</a><a href="#tools">工具箱</a><a href="#needs">需求广场</a><a href="#events">活动</a></nav>
+    <button class="head-search" data-search-open><svg class="icon"><use href="icons.svg#i-search"></use></svg><span>搜索社区内容</span><span>Ctrl K</span></button>
+    <div class="head-actions"><button class="head-btn" aria-label="通知"><svg class="icon"><use href="icons.svg#i-bell"></use></svg></button><div class="head-user"><i>L</i><span>Lin</span></div></div>
+  </header>
+  <div class="subbar"><b>社区公告</b><span>码境「可观测性主题月」正在进行，欢迎提交工程实践文章。</span><span>服务状态 <strong>● 正常</strong></span></div>
+
+  <div class="workspace">
+    <aside class="sidebar">
+      <p class="side-label">WORKSPACE / 工作区</p>
+      <nav class="side-nav"><a class="side-link active" href="#"><svg class="icon"><use href="icons.svg#i-grid"></use></svg>社区总览</a><a class="side-link" href="#articles"><svg class="icon"><use href="icons.svg#i-book"></use></svg>技术博客<b>24</b></a><a class="side-link" href="#tools"><svg class="icon"><use href="icons.svg#i-tools"></use></svg>工具箱</a><a class="side-link" href="#needs"><svg class="icon"><use href="icons.svg#i-users"></use></svg>需求广场<b class="hot">12</b></a><a class="side-link" href="#"><svg class="icon"><use href="icons.svg#i-star"></use></svg>我的收藏</a></nav>
+      <p class="side-label">CHANNELS / 频道</p><a class="channel"><i></i>工程实践</a><a class="channel"><i></i>产品与设计</a><a class="channel"><i></i>独立开发</a><a class="channel"><i></i>开源项目</a><div class="side-foot">码境社区 · 开发者协作网络<br />当前在线 2,841 人</div>
+    </aside>
+
+    <main class="content">
+      <div class="crumb"><span>首页</span><span>/</span><span>社区总览</span></div>
+      <div class="page-head"><div><h1>技术动态</h1><p>关注正在发生的工程实践、工具与协作机会。</p></div><div class="head-cta"><button class="btn btn-light"><svg class="icon" style="width:13px;height:13px"><use href="icons.svg#i-filter"></use></svg>筛选</button><button class="btn btn-primary"><svg class="icon" style="width:13px;height:13px"><use href="icons.svg#i-plus"></use></svg>发布内容</button></div></div>
+
+      <section class="feature"><div class="feature-copy"><small>FEATURED TOPIC / VOL. 12</small><h2>平台工程，不只是把服务搬上 Kubernetes</h2><p>从开发者入口、环境一致性到反馈闭环，四篇来自一线团队的平台建设记录，讲清楚真正影响交付效率的部分。</p><div class="feature-actions"><button class="btn btn-primary">阅读专题 <svg class="icon" style="width:12px;height:12px"><use href="icons.svg#i-arrow"></use></svg></button><a>查看 12 篇内容</a></div></div><div class="feature-visual"></div></section>
+      <div class="metrics"><div class="metric"><span>今日新增内容</span><strong>38</strong><b>+12%</b></div><div class="metric"><span>本周活跃作者</span><strong>412</strong><b>+8%</b></div><div class="metric"><span>开放协作需求</span><strong>286</strong><b>+21</b></div><div class="metric"><span>工具收藏次数</span><strong>1,840</strong><b>+16%</b></div></div>
+
+      <div class="section-bar" id="articles"><div class="section-tabs" data-feed-tabs role="tablist"><button class="section-tab is-active" data-tab="all" role="tab" aria-selected="true">全部动态</button><button class="section-tab" data-tab="article" role="tab" aria-selected="false">博客文章</button><button class="section-tab" data-tab="tool" role="tab" aria-selected="false">工具箱</button><button class="section-tab" data-tab="need" role="tab" aria-selected="false">协作需求</button></div><span class="section-sort">按最近更新</span></div>
+
+      <article class="feed-row" data-feed-item="article"><div><p class="feed-kind"><i>ARTICLE</i> 工程实践 · 可观测性</p><h3>为 Node.js 服务补齐 trace 上下文，需要改哪些边界</h3><p>从请求入口到队列消费，梳理 traceId 的注入位置、异步传播和日志关联，避免只在演示环境生效。</p><div class="meta"><span class="tiny-avatar av-3">Z</span><b>Zoe He</b><span>10 分钟阅读</span><span>·</span><span>3 小时前</span><span>·</span><span>48 收藏</span></div></div><div class="thumb thumb-1"></div></article>
+      <article class="feed-row" data-feed-item="tool"><div><p class="feed-kind"><i class="tool">TOOL</i> 效率工具 · 开源项目</p><h3>Flowboard：键盘优先的协作画布</h3><p>从启动、定位到指令流都围绕高频操作优化，适合远程团队快速对齐想法。</p><div class="meta"><span class="tiny-avatar av-2">M</span><b>Marco Lin</b><span>1.2k stars</span><span>·</span><span>昨天</span><span>·</span><span>免费</span></div></div><div class="thumb thumb-2"></div></article>
+      <article class="feed-row" data-feed-item="need"><div><p class="feed-kind"><i class="need">COLLAB</i> 协作需求 · Next.js</p><h3>寻找 App Router 伙伴，完成知识库 MVP</h3><p>已完成交互原型和内容模型，需要一位对产品完成度有要求的前端，四周内做出可测试版本。</p><div class="meta"><span class="tiny-avatar av-1">L</span><b>Lena Zhou</b><span>预算 8k–15k</span><span>·</span><span>3 人响应</span></div></div><div class="thumb thumb-3"></div></article>
+      <article class="feed-row" data-feed-item="article"><div><p class="feed-kind"><i>ARTICLE</i> 工程实践 · CLI</p><h3>从 0 到 1 构建一个真正好用的命令行工具</h3><p>错误提示、输出层级、管道兼容和安装体验，决定开发者会不会第二次打开它。</p><div class="meta"><span class="tiny-avatar av-4">K</span><b>Kevin Wu</b><span>14 分钟阅读</span><span>·</span><span>11 月 20 日</span><span>·</span><span>82 收藏</span></div></div><div class="thumb thumb-4"></div></article>
+    </main>
+
+    <aside class="right">
+      <section class="panel" id="needs"><div class="panel-head"><strong>需求雷达</strong><span>最新 12 条</span></div><div class="radar-item"><small>NEXT.JS · 4 WEEKS</small><strong>知识库 MVP 前端伙伴</strong><span>3 人响应 <b>8k–15k</b></span></div><div class="radar-item"><small>RUST · PART TIME</small><strong>日志解析性能优化</strong><span>1 人响应 <b>预算待议</b></span></div><div class="radar-item"><small>DESIGN · REMOTE</small><strong>开发者工具视觉系统</strong><span>5 人响应 <b>6k–9k</b></span></div></section>
+      <section class="panel" id="events"><div class="panel-head"><strong>近期活动</strong><span>EVENTS</span></div><div class="event"><div class="event-date">11<b>24</b></div><div><strong>可观测性主题圆桌</strong><span>线上 · 20:00</span></div></div><div class="event"><div class="event-date">11<b>27</b></div><div><strong>独立开发者开放日</strong><span>上海 · 14:00</span></div></div><div class="event"><div class="event-date">12<b>01</b></div><div><strong>CodeHarbor Demo Day</strong><span>线上 · 19:30</span></div></div></section>
+      <section class="panel"><div class="panel-head"><strong>活跃贡献者</strong><span>本周</span></div><div class="user-row"><span class="tiny-avatar av-1">Y</span><div><strong>Yuki Zhang</strong><small>前端 · 交互体验</small></div><button>关注</button></div><div class="user-row"><span class="tiny-avatar av-4">K</span><div><strong>Kevin Wu</strong><small>全栈 · 独立开发</small></div><button>关注</button></div><div class="user-row"><span class="tiny-avatar av-3">A</span><div><strong>Aria Chen</strong><small>设计系统 · 文档</small></div><button>关注</button></div></section>
+      <section class="pro-card"><small>COMMUNITY PROFILE</small><strong>让你的工程经验被更多同行看见。</strong><button>开始写作 →</button></section>
+    </aside>
+  </div>
+
+  <div class="search-panel" data-search-panel><div class="search-box"><svg class="icon" style="color:#6d8298"><use href="icons.svg#i-search"></use></svg><input placeholder="搜索文章、工具、作者或需求…" /><button class="search-close" data-search-close aria-label="关闭"><svg class="icon"><use href="icons.svg#i-close"></use></svg></button></div></div>
+  <a class="back" href="index.html">← 返回选版</a>
+  <script src="shared.js"></script>
+</body>
+</html>

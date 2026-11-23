@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeHarbor · Editorial Canvas</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" />
+  <link rel="stylesheet" href="canvas.css" />
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="../index.html"><span class="brand-mark">CH</span><span>CodeHarbor</span></a>
+    <nav class="main-nav"><a class="active" href="#">首页</a><a href="#stories">博客</a><a href="#tools">工具箱</a><a href="#collab">需求广场</a></nav>
+    <div class="top-actions"><button class="search" data-search-open aria-label="搜索"><svg class="icon"><use href="icons.svg#i-search"></use></svg></button><button class="publish"><svg class="icon" style="width:13px;height:13px"><use href="icons.svg#i-plus"></use></svg> 发布</button></div>
+  </header>
+  <section class="hero">
+    <div><p class="kicker">THE DEVELOPER EDITION / 2026.11</p><h1>让技术经验，<br /><em>成为可读的作品。</em></h1><p class="hero-copy">一份给开发者的社区刊物：真实的工程实践、值得收藏的工具，以及正在寻找同路人的项目。</p><div class="hero-links"><a class="read" href="#stories">阅读本期内容 <svg class="icon" style="width:13px;height:13px;vertical-align:-3px"><use href="icons.svg#i-arrow"></use></svg></a><a class="text" href="#collab">发布你的故事 →</a></div></div>
+    <aside class="issue"><span>THIS WEEK'S NOTE</span><strong>复杂，不该成为难以沟通的借口。</strong><p>本周编辑精选 12 篇文章，关注工程师如何把系统、决策和协作讲清楚。</p></aside>
+  </section>
+  <section class="editorial" id="stories">
+    <div class="section-head"><div><h2>编辑精选</h2><p>来自社区作者的一线记录</p></div><div class="tabs" data-feed-tabs><button class="tab is-active" data-tab="all">全部</button><button class="tab" data-tab="engineering">工程</button><button class="tab" data-tab="design">产品设计</button><button class="tab" data-tab="people">协作</button></div></div>
+    <div class="story-grid">
+      <article class="story" data-feed-item="engineering"><div class="story-image img-a"></div><div class="story-kind">01 / ENGINEERING PRACTICE</div><h3>为 Node.js 服务补齐 trace 上下文，需要改哪些边界</h3><p>从请求入口到队列消费，梳理 traceId 的注入位置、异步传播和日志关联。</p><div class="meta"><span class="avatar av-c">Z</span> Zoe He · 10 分钟阅读 · 3 小时前</div></article>
+      <article class="story" data-feed-item="design"><div class="story-image img-b"></div><div class="story-kind">02 / OPEN SOURCE</div><h3>Flowboard：键盘优先的协作画布</h3><p>把白板、任务和灵感放在一起，适合小团队快速对齐想法。</p><div class="meta"><span class="avatar av-b">M</span> Marco Lin · 工具箱</div></article>
+      <article class="story" data-feed-item="people"><div class="story-image img-c"></div><div class="story-kind">03 / COLLABORATION</div><h3>寻找 App Router 伙伴，完成知识库 MVP</h3><p>交互原型和内容模型已完成，寻找重视产品完成度的前端伙伴。</p><div class="meta"><span class="avatar av-a">L</span> Lena Zhou · 3 人响应</div></article>
+    </div>
+    <div class="trend" id="tools"><div><h2>这周大家在读</h2><div class="trend-list"><div class="trend-item"><span class="trend-number">01</span><div><strong>从 0 到 1 构建一个好用的 CLI</strong><small>Kevin Wu · 82 次收藏</small></div></div><div class="trend-item"><span class="trend-number">02</span><div><strong>设计系统的第一原则</strong><small>Aria Chen · 61 次收藏</small></div></div><div class="trend-item"><span class="trend-number">03</span><div><strong>TinyDiff：不打扰你的文本对比</strong><small>Aria Chen · 4.8 评分</small></div></div><div class="trend-item"><span class="trend-number">04</span><div><strong>独立开发的第一次上线</strong><small>Yuki Zhang · 47 次收藏</small></div></div></div></div><section class="collab" id="collab"><small>OPEN CALL / 03</small><h3>你正在做什么？</h3><p>一个工具、一篇文章或一个还没有完成的想法，都值得找到下一位同行。</p><button>发布到码境 <svg class="icon" style="width:12px;height:12px;vertical-align:-3px"><use href="icons.svg#i-arrow"></use></svg></button></section></div>
+  </section>
+  <footer class="footer"><span>© 2026 CodeHarbor · 码境</span><span>Stories for people who build.</span></footer>
+  <div class="search-panel" data-search-panel><div class="search-box"><svg class="icon"><use href="icons.svg#i-search"></use></svg><input placeholder="搜索文章、工具、作者或需求…" /><button class="search-close" data-search-close aria-label="关闭"><svg class="icon"><use href="icons.svg#i-close"></use></svg></button></div></div>
+  <a class="back" href="index.html">← 返回选版</a>
+  <script src="shared.js"></script>
+</body>
+</html>

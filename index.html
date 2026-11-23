@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CodeHarbor 码境，面向开发者的内容、工具与需求社区。" />
+  <title>CodeHarbor · 码境</title>
+  <link rel="stylesheet" href="https://unpkg.com/@arco-design/web-react@2.66.5/dist/css/arco.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="shell arco">
+    <header class="header">
+      <a class="brand" href="#home" data-route="home" aria-label="CodeHarbor 首页"><span class="brand-mark">CH</span><span>CodeHarbor<small>码境开发者社区</small></span></a>
+      <button class="header-search" id="search-toggle" aria-label="搜索"><svg class="icon"><use href="designs/icons.svg#i-search"></use></svg><span>搜索文章、工具、作者</span><span>⌘ K</span></button>
+      <div class="header-actions">
+        <button class="header-icon" aria-label="通知"><svg class="icon"><use href="designs/icons.svg#i-bell"></use></svg></button>
+        <button class="text-button" id="login-button">登录</button>
+        <button class="publish" id="publish-button"><svg class="icon" style="width:13px;height:13px"><use href="designs/icons.svg#i-plus"></use></svg> 发布</button>
+        <button class="avatar-button" id="profile-button" aria-label="个人中心">L</button>
+      </div>
+    </header>
+
+    <div class="workspace-shell">
+      <aside class="module-rail" aria-label="模块导航">
+        <p class="rail-caption">WORKSPACE</p>
+        <a class="module-link is-active" href="#home" data-route="home"><span class="module-link-icon"><svg class="icon"><use href="designs/icons.svg#i-grid"></use></svg></span><span><strong>首页</strong><small>社区总览</small></span></a>
+        <a class="module-link module-link-blog" href="#blog" data-route="blog"><span class="module-link-icon">B</span><span><strong>博客</strong><small>技术内容</small></span><b>38</b></a>
+        <a class="module-link module-link-toolbox" href="#toolbox" data-route="toolbox"><span class="module-link-icon">T</span><span><strong>工具箱</strong><small>开发资源</small></span><b>126</b></a>
+        <a class="module-link module-link-requirements" href="#requirements" data-route="requirements"><span class="module-link-icon">R</span><span><strong>需求广场</strong><small>寻找伙伴</small></span><b>286</b></a>
+        <div class="rail-divider"></div>
+        <p class="rail-caption">SHORTCUTS</p>
+        <a class="rail-shortcut" href="#blog" data-route="blog"><svg class="icon"><use href="designs/icons.svg#i-clock"></use></svg>最近更新</a>
+        <a class="rail-shortcut" href="#requirements" data-route="requirements"><svg class="icon"><use href="designs/icons.svg#i-users"></use></svg>我的响应</a>
+        <div class="rail-bottom"><span class="rail-live"></span><span>2,841 人在线</span></div>
+      </aside>
+
+      <main class="main-shell">
+      <section class="page-view is-active" id="home-view">
+        <div class="breadcrumb"><span>首页</span><span>/</span><b>社区总览</b></div>
+        <section class="home-hero">
+          <div class="home-hero-copy"><small>CODEHARBOR / COMMUNITY</small><h1>让每一次分享，都能变成下一次协作</h1><p>面向开发者的内容、工具和需求社区。阅读经验、发现好工具，找到一起把想法做出来的人。</p><div class="home-hero-actions"><button class="btn btn-primary" data-route="blog">浏览社区 <svg class="icon" style="width:13px;height:13px"><use href="designs/icons.svg#i-arrow"></use></svg></button><button class="btn" id="hero-publish">分享你的作品</button></div></div>
+          <div class="home-hero-image" role="img" aria-label="开发者团队围绕电脑协作"></div>
+        </section>
+        <div class="stats home-stats"><div class="stat"><span>社区开发者</span><strong>12,840</strong><b>+12%</b></div><div class="stat"><span>技术内容</span><strong>3,642</strong><b>+8%</b></div><div class="stat"><span>开放需求</span><strong>286</strong><b>+21</b></div><div class="stat"><span>今日互动</span><strong>1,840</strong><b>+16%</b></div></div>
+        <section class="home-section"><div class="home-section-head"><div><small>MODULES</small><h2>从这里开始</h2></div><span>选择一个模块深入探索</span></div><div class="module-grid">
+          <a class="module-card module-blog" href="#blog" data-route="blog"><div class="module-card-top"><span class="module-icon">B</span><span class="module-arrow">↗</span></div><small>CONTENT / 01</small><h3>技术博客</h3><p>阅读真实的工程实践、产品思考和开发经验。</p><strong>今日更新 38 篇</strong></a>
+          <a class="module-card module-toolbox" href="#toolbox" data-route="toolbox"><div class="module-card-top"><span class="module-icon">T</span><span class="module-arrow">↗</span></div><small>TOOLS / 02</small><h3>开发工具箱</h3><p>收藏让工作流更顺手的工具、项目和资源。</p><strong>精选工具 126 个</strong></a>
+          <a class="module-card module-requirements" href="#requirements" data-route="requirements"><div class="module-card-top"><span class="module-icon">R</span><span class="module-arrow">↗</span></div><small>COLLAB / 03</small><h3>需求广场</h3><p>发布项目需求，寻找愿意一起把事情做成的人。</p><strong>开放需求 286 条</strong></a>
+        </div></section>
+        <section class="home-section daily-summary"><div class="home-section-head"><div><small>DAILY BRIEF</small><h2>每日资讯</h2></div><button class="daily-news-more" id="side-publish" type="button">发布内容 <svg class="icon" style="width:13px;height:13px"><use href="designs/icons.svg#i-arrow"></use></svg></button></div><div class="daily-summary-grid"><article><span class="news-tag news-tag-blue">前端</span><h3>浏览器原生能力持续增强，前端工程正在重新思考运行时边界</h3><p>开发者头条 · 6 分钟阅读</p></article><article><span class="news-tag news-tag-green">开源</span><h3>小团队开源项目如何建立第一批真实贡献者</h3><p>Open Source Weekly · 4 分钟阅读</p></article><article><span class="news-tag news-tag-orange">产品</span><h3>独立开发者的工具箱：把重复工作交给自动化</h3><p>码境编辑部 · 专题</p></article></div></section>
+      </section>
+
+      <section class="page-view module-view" id="blog-view" hidden>
+        <div class="breadcrumb"><span>首页</span><span>/</span><b>技术博客</b></div>
+        <div class="page-head"><div><h1>技术博客</h1><p>来自社区开发者的一线经验和工程实践。</p></div><div class="page-actions"><button class="btn"><svg class="icon" style="width:13px;height:13px"><use href="designs/icons.svg#i-filter"></use></svg>筛选</button><button class="btn btn-primary" id="blog-publish"><svg class="icon" style="width:13px;height:13px"><use href="designs/icons.svg#i-plus"></use></svg>写一篇博客</button></div></div>
+        <div class="section-bar" id="explore"><div class="tabs"><button class="tab filter-chip active" data-filter="blog">全部文章</button></div><span class="sort">按最近更新</span></div><div class="feed" id="feed"></div>
+      </section>
+
+      <section class="page-view module-view" id="toolbox-view" hidden>
+        <div class="breadcrumb"><span>首页</span><span>/</span><b>开发工具箱</b></div>
+        <div class="page-head"><div><h1>开发工具箱</h1><p>让日常开发、协作和创作更顺手。</p></div><button class="btn btn-primary" id="toolbox-publish"><svg class="icon" style="width:13px;height:13px"><use href="designs/icons.svg#i-plus"></use></svg>提交工具</button></div>
+        <div class="toolbox-grid"><article class="toolbox-card"><span class="toolbox-badge">开源项目</span><h3>Flowboard</h3><p>给开发者的轻量协作画布，把白板、任务和灵感放在一起。</p><div><strong>1.2k stars</strong><span>Marco Lin · 昨天</span></div></article><article class="toolbox-card"><span class="toolbox-badge toolbox-badge-green">在线工具</span><h3>TinyDiff</h3><p>轻量、快速、支持 Markdown 预览的文本对比工具。</p><div><strong>4.8 评分</strong><span>Aria Chen · 11 月 19 日</span></div></article><article class="toolbox-card"><span class="toolbox-badge toolbox-badge-orange">效率工具</span><h3>Prompt Shelf</h3><p>整理团队常用提示词和工作流模板，支持快速搜索和复制。</p><div><strong>320 收藏</strong><span>Yuki Zhang · 11 月 18 日</span></div></article></div>
+      </section>
+
+      <section class="page-view module-view" id="requirements-view" hidden>
+        <div class="breadcrumb"><span>首页</span><span>/</span><b>需求广场</b></div>
+        <div class="page-head"><div><h1>需求广场</h1><p>找到合适的伙伴，一起把想法推进到下一步。</p></div><button class="btn btn-primary" id="requirements-publish"><svg class="icon" style="width:13px;height:13px"><use href="designs/icons.svg#i-plus"></use></svg>发布需求</button></div>
+        <div class="requirements-layout"><div class="requirements-list"><article class="requirement-card"><div><span class="requirement-label">NEXT.JS · 4 WEEKS</span><h3>寻找 App Router 伙伴，完成知识库 MVP</h3><p>交互原型和内容模型已完成，希望找到一位重视产品完成度的前端伙伴。</p><div class="requirement-meta"><span>3 人响应</span><span>远程协作</span><strong>预算 8k–15k</strong></div></div><button class="btn">查看详情</button></article><article class="requirement-card"><div><span class="requirement-label">RUST · PART TIME</span><h3>日志解析性能优化</h3><p>现有解析器在大文件场景下性能不稳定，需要熟悉 Rust 和基准测试的伙伴。</p><div class="requirement-meta"><span>1 人响应</span><span>兼职</span><strong>预算待议</strong></div></div><button class="btn">查看详情</button></article><article class="requirement-card"><div><span class="requirement-label">DESIGN · REMOTE</span><h3>开发者工具视觉系统</h3><p>为一组开源开发工具建立统一的品牌和组件规范，已有基础产品方向。</p><div class="requirement-meta"><span>5 人响应</span><span>远程协作</span><strong>预算 6k–9k</strong></div></div><button class="btn">查看详情</button></article></div><aside class="module-aside"><div class="panel notice"><small>COLLABORATION GUIDE</small><strong>一份清晰的需求，更容易找到合适的伙伴。</strong><p>描述目标、现状、时间和期望投入，响应质量会明显提高。</p></div></aside></div>
+      </section>
+      </main>
+    </div>
+
+    <footer class="footer"><span>© 2026 CodeHarbor · 码境</span><span>为每一次创造，连接更多可能。</span><span><a href="#">社区规范</a><a href="#">关于码境</a></span></footer>
+  </div>
+
+  <div class="modal-backdrop" id="modal-backdrop" hidden><div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="modal-close" id="modal-close" aria-label="关闭">×</button><div id="modal-content"></div></div></div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>

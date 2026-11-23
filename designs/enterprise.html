@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeHarbor · 大厂 UI 选版</title>
+  <style>
+    :root{--ink:#162033;--muted:#667085;--line:#e5e7eb;--bg:#f6f8fb;--blue:#1677ff;--white:#fff}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,"Microsoft YaHei",sans-serif}.page{max-width:1180px;margin:auto;padding:0 24px 60px}.top{height:72px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:10px;font-weight:700}.mark{width:31px;height:31px;border-radius:7px;background:var(--blue);color:#fff;display:grid;place-items:center;font-size:10px}.back{color:var(--muted);font-size:12px}.intro{padding:65px 0 38px}.intro small{font-size:10px;color:var(--blue);font-weight:700;letter-spacing:1px}.intro h1{font-size:48px;letter-spacing:-2px;margin:14px 0 12px}.intro p{color:var(--muted);font-size:13px;line-height:1.8;max-width:620px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--white);border:1px solid var(--line);border-radius:8px;overflow:hidden;transition:.18s}.card:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(24,47,84,.12)}.preview{height:300px;background:#eef2f7;overflow:hidden;position:relative}.preview iframe{width:1440px;height:1000px;border:0;transform:scale(.29);transform-origin:top left;pointer-events:none}.preview>a{position:absolute;inset:0;display:flex;align-items:flex-end;justify-content:flex-end;padding:13px;background:linear-gradient(transparent 70%,rgba(8,31,61,.18));opacity:0;transition:.18s}.card:hover .preview>a{opacity:1}.preview>a span{background:#fff;color:var(--ink);padding:8px 10px;border-radius:4px;font-size:10px;font-weight:700}.body{padding:18px}.body small{color:var(--blue);font-size:9px;font-weight:700;letter-spacing:.7px}.body h2{font-size:20px;margin:8px 0 7px;letter-spacing:-.6px}.body p{font-size:11px;color:var(--muted);line-height:1.65;min-height:53px}.open{display:inline-flex;margin-top:12px;padding:9px 11px;background:var(--blue);color:#fff;border-radius:4px;font-size:10px;font-weight:700}.foot{margin-top:35px;padding-top:18px;border-top:1px solid var(--line);font-size:10px;color:var(--muted)}
+    @media(max-width:900px){.grid{grid-template-columns:1fr 1fr}.preview{height:330px}.preview iframe{transform:scale(.36)}}@media(max-width:620px){.page{padding:0 14px 45px}.intro{padding:44px 0 28px}.intro h1{font-size:38px}.grid{grid-template-columns:1fr}.preview{height:330px}.preview iframe{transform:scale(.36)}}
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="top"><a class="brand" href="../index.html"><span class="mark">CH</span>CodeHarbor / Enterprise UI</a><a class="back" href="index.html">返回全部方案</a></header>
+    <section class="intro"><small>ANT GROUP · BYTEDANCE · TENCENT INSPIRED</small><h1>这次，按大厂设计系统来。</h1><p>三套新方案分别引用 Ant Design、Arco Design、TDesign 的样式基线，重点比较企业级导航、数据密度、状态标签、操作按钮和内容分栏。</p></section>
+    <main class="grid">
+      <article class="card"><div class="preview"><iframe src="antd.html" title="Ant Design 预览" loading="lazy"></iframe><a href="antd.html"><span>打开完整页面 →</span></a></div><div class="body"><small>ANT DESIGN / 蚂蚁风格</small><h2>Enterprise Console</h2><p>结构稳定、层级清晰、适合做社区后台与内容治理。</p><a class="open" href="antd.html">查看方案 A</a></div></article>
+      <article class="card"><div class="preview"><iframe src="arco.html" title="Arco Design 预览" loading="lazy"></iframe><a href="arco.html"><span>打开完整页面 →</span></a></div><div class="body"><small>ARCO DESIGN / 字节风格</small><h2>Modern Community</h2><p>更轻、更现代，适合做开发者社区首页和内容流。</p><a class="open" href="arco.html">查看方案 B</a></div></article>
+      <article class="card"><div class="preview"><iframe src="tdesign.html" title="TDesign 预览" loading="lazy"></iframe><a href="tdesign.html"><span>打开完整页面 →</span></a></div><div class="body"><small>TDESIGN / 腾讯风格</small><h2>Clear Workspace</h2><p>中文产品体验更自然，信息密度和可读性保持平衡。</p><a class="open" href="tdesign.html">查看方案 C</a></div></article>
+    </main>
+    <footer class="foot">选定后会把对应组件语言应用到正式首页，并继续接入现有博客、工具箱、需求交互。</footer>
+  </div>
+</body>
+</html>
